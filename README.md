@@ -1,63 +1,80 @@
-# modelo_regressao
+<p align="center">
+  <img src="https://github.com/martinez-ie/modelo_regressao/blob/main/imagens/banner_regressao.png" alt="Banner do Projeto" width="100%">
+</p>
 
-🔢 Projeto: Modelo de Regressão para Previsão de Preço
+# 🧠 Modelo de Regressão para Previsão de Preço
+
 Este projeto tem como objetivo construir um modelo preditivo de regressão para estimar o preço de produtos com base em variáveis como categoria, avaliação dos usuários e presença de desconto. A proposta simula um cenário comum no varejo, em que a precificação precisa ser analisada com apoio de dados para garantir competitividade e lucratividade.
 
-🎯 Objetivo
-Desenvolver e avaliar modelos de regressão capazes de prever o preço de produtos a partir de características disponíveis em um dataset fictício. O foco principal foi treinar modelos supervisionados, comparar seus desempenhos e interpretar os resultados obtidos para posterior tomada de decisão.
+---
 
-🧪 Etapas do Projeto
-Análise Exploratória de Dados (EDA)
+## 📌 Índice
 
-Leitura do dataset com pandas.
+- [🎯 Objetivo](#-objetivo)
+- [🧪 Etapas do Projeto](#-etapas-do-projeto)
+- [🛠️ Tecnologias e Ferramentas Utilizadas](#️-tecnologias-e-ferramentas-utilizadas)
+- [📈 Resultados](#-resultados)
+- [💡 Aprendizados](#-aprendizados)
+- [🔗 Acesse](#-acesse)
 
-Análise descritiva: verificação de colunas, tipos de variáveis, valores nulos e distribuição dos dados.
+---
 
-Gráficos com seaborn e matplotlib para identificar correlações e outliers.
+## 🎯 Objetivo
 
-Limpeza e Pré-processamento
+Desenvolver e avaliar modelos de regressão capazes de prever o preço de produtos a partir de características disponíveis em um dataset fictício. O foco principal foi treinar modelos supervisionados, comparar seus desempenhos e interpretar os resultados para uma tomada de decisão mais assertiva.
 
-Tratamento de valores ausentes.
+---
 
-Codificação de variáveis categóricas com LabelEncoder.
+## 🧪 Etapas do Projeto
 
-Normalização com MinMaxScaler para manter os dados em uma escala apropriada à modelagem.
+1. **Análise Exploratória de Dados (EDA)**
+   - Leitura do dataset com `pandas`.
+   - Análise descritiva: colunas, tipos de variáveis, valores nulos e distribuição dos dados.
+   - Visualizações com `seaborn` e `matplotlib` para identificar padrões, outliers e correlações.
 
-Modelagem
+2. **Limpeza e Pré-processamento**
+   - Tratamento de valores ausentes.
+   - Codificação de variáveis categóricas com `LabelEncoder`.
+   - Normalização com `MinMaxScaler`.
 
-Aplicação de Regressão Linear como baseline.
+3. **Modelagem**
+   - Implementação da **Regressão Linear** como baseline.
+   - Aplicação de modelos mais robustos como **Random Forest Regressor** e **XGBoost**.
+   - Divisão dos dados em treino e teste com `train_test_split`.
 
-Implementação de modelos mais robustos como Random Forest Regressor e XGBoost.
+4. **Avaliação de Desempenho**
+   - Métricas: `R² Score`, `MAE` (Erro Absoluto Médio) e `MSE` (Erro Quadrático Médio).
+   - Gráficos de dispersão e análise de resíduos para avaliação visual dos erros.
 
-Divisão dos dados em treino e teste com train_test_split.
+---
 
-Avaliação de Desempenho
+## 🛠️ Tecnologias e Ferramentas Utilizadas
 
-Métricas utilizadas: R² Score, MAE (Erro Absoluto Médio) e MSE (Erro Quadrático Médio).
+- **Python** (Jupyter Notebook)
+- **Bibliotecas**:
+  - `pandas`, `numpy`
+  - `matplotlib`, `seaborn`
+  - `scikit-learn`
+  - `xgboost`
 
-Visualização dos erros com gráficos de dispersão e análise de resíduos.
+---
 
-🛠️ Ferramentas e Tecnologias Utilizadas
-Python (Jupyter Notebook)
+## 📈 Resultados
 
-Bibliotecas:
+Os modelos foram comparados por meio de suas métricas de performance. O **Random Forest Regressor** se destacou com melhor capacidade de generalização. A análise indicou forte influência das variáveis de avaliação e desconto no preço final do produto.
 
-pandas e numpy para manipulação de dados
+---
 
-matplotlib e seaborn para visualização
+## 💡 Aprendizados
 
-scikit-learn para modelagem e métricas
+- Prática com engenharia de atributos e normalização de dados.
+- Comparação entre diferentes algoritmos de regressão.
+- Interpretação de métricas e visualizações para aprimoramento dos modelos.
 
-xgboost para algoritmos avançados de regressão
+---
 
-📈 Resultados
-Os modelos foram comparados com base em suas métricas de performance, sendo o Random Forest Regressor o que apresentou melhor capacidade de generalização no conjunto de teste. Além disso, foi possível observar como variáveis como avaliação e desconto influenciam diretamente no preço dos produtos.
+## 🔗 Acesse
 
-💡 Aprendizados
-Esse projeto me permitiu aprofundar conhecimentos em:
+📂 [Repositório no GitHub](https://github.com/martinez-ie/modelo_regressao)
 
-Engenharia de atributos e preparação de dados para modelos supervisionados.
-
-Comparação entre diferentes algoritmos de regressão.
-
-Interpretação crítica de métricas e visualizações para refinar modelos.
+---
